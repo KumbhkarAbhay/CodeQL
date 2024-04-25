@@ -1,0 +1,25 @@
+
+<div class="body"><br>
+<h1>WellCome to Our HomePage</h1>
+<div class="container">
+  <h1> Employee Data</h1>
+    <p>Name: {{ name }}</p>
+    <p>Age:  {{ age }}</p>
+    <p>Names: {{ names }}</p>
+    <p>month:any {{month}}=June</p>
+    <p>Employee Codes: {{ empcode }}</p>
+    <p>Employees: {{ employees }}</p>
+    <p>Is Active: {{ isActive }}</p>
+    <button (click)="TestFunction()"><a href="https://cylsys-my.sharepoint.com/:x:/r/personal/riya_sahu_cylsys_com/_layouts/15/Doc.aspx?sourcedoc=%7B5FC03E38-AC01-4D91-8810-AB9E13AA697B%7D&file=Timesheet_%20Abhay%20Kumbhkar.xlsx&action=default&mobileredirect=true">Submit</a></button>
+  </div>
+  
+
+  <div class="container-1">
+    <h1 class="text-center mb-5">Contact Details</h1>
+    <div *ngIf="contactData">
+      <p>Name: {{ contactData.name }}</p>
+      <p>Email: {{ contactData.email }}</p>
+      <p>Subject: {{ contactData.subject }}</p>
+      <p>Message: {{ contactData.message }}</p>
+    </div>
+  </div>
